@@ -1,2 +1,0 @@
-pygithub==1.55
-gitpython==3.1.18
