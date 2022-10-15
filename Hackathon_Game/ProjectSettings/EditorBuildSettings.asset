@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Yeti View.unity
+    guid: 8c97eb7b7e4af8a40a0b3c6468f3394b
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3a53f34ec3c5c814ba58ba1e53a31e43, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b65cc9431562bd34a8914796eac11d1c, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7bc65a79978b9534495dd619ee2acec1, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6e8aa5be7e59eac4097f5d84a0a332f8, type: 2}
