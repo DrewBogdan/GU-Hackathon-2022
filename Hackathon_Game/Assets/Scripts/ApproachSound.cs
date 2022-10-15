@@ -7,12 +7,13 @@ public class ApproachSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //
     }
 }
