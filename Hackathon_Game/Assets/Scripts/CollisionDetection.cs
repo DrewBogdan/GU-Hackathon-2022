@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
+    AddPoints Points;
+
+    void Start()
+    {
+        Points =FindObjectOfType<AddPoints>();
+    }
 
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collide");
         if(collision.gameObject.name == "Fruit") {
             Debug.Log("Fruit Collision");
-            Destroy(collision.gameObject);
+            Points.fruitCollected();
             // fire script to add points
             // fire script to place new fruit
         }
