@@ -13,7 +13,7 @@ public class CollisionDetection : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collide");
+        Debug.Log("Collide"
         if(collision.gameObject.tag == "Fruit") {
             Debug.Log("Fruit Collision");
             Points.fruitCollected();
@@ -25,6 +25,12 @@ public class CollisionDetection : MonoBehaviour
         else if(collision.gameObject.tag == "Yeti") {
             Debug.Log("Ghost Collision");
             // fire script to end the game
+        }
+        else if(collision.gameObject.name == "pixel_melon") {
+            Debug.Log("Fruit Collision");
+            Destroy(collision.gameObject);
+            // fire script to add points
+            // fire script to place new fruit
         }
     }
 }
