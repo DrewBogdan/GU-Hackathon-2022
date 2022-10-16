@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AddPoints : MonoBehaviour
 {
+    public GameObject HUD;
     public int points = 0;
     public int collected = 0;
     // Start is called before the first frame update
@@ -22,5 +23,6 @@ public class AddPoints : MonoBehaviour
     {
         points += 50 * (collected+1);
         collected++;
+        HUD.FindObjectOfType<Points>().FindObjectOfType<PointScript>().PointUpdate(points);
     }
 }
