@@ -5,9 +5,9 @@ using UnityEngine;
 public class FloatAndBob : MonoBehaviour
 {
     // degrees per second
-    public float rotationSpeed = 10.0f;
-    public float height = 1f;
-    public float speed = 1f;
+    public float rotationSpeed = 18.0f;
+    public float height = 0.2f;
+    public float speed = 0.7f;
 
     Vector3 posOffset = new Vector3 ();
     Vector3 tempPos = new Vector3 ();

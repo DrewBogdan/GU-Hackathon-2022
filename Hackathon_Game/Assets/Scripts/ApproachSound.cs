@@ -5,7 +5,7 @@ using UnityEngine;
 public class ApproachSound : MonoBehaviour
 {
     AudioSource audioSource;
-    GameObject player;
+    public GameObject player;
     
     // Start is called before the first frame update
     void Start()
