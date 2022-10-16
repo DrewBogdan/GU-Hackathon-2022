@@ -10,7 +10,7 @@ public class SpawnFruit : MonoBehaviour
     {
         for (int i = 0; i < amnt; i++)
         {
-            Vector3 randomSpawnPos = new Vector3(Random.Range(-50, 51), 1, Random.Range(-50, 51));
+            Vector3 randomSpawnPos = new Vector3(Random.Range(-5, 5), -1, Random.Range(-5, 5));
             Instantiate(fruitPrefab, randomSpawnPos, Quaternion.identity);
         }
     }

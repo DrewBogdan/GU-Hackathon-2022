@@ -8,7 +8,7 @@ public class CollisionDetection : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collide");
-        if(collision.gameObject.name == "Fruit") {
+        if(collision.gameObject.name == "pixel_melon(Clone)") {
             Debug.Log("Fruit Collision");
             Destroy(collision.gameObject);
             // fire script to add points
@@ -18,6 +18,12 @@ public class CollisionDetection : MonoBehaviour
         else if(collision.gameObject.name == "Ghost") {
             Debug.Log("Ghost Collision");
             // fire script to end the game
+        }
+        else if(collision.gameObject.name == "pixel_melon") {
+            Debug.Log("Fruit Collision");
+            Destroy(collision.gameObject);
+            // fire script to add points
+            // fire script to place new fruit
         }
     }
 }

@@ -13,4 +13,8 @@ public class ScoreDisplay : MonoBehaviour
     {
         scoreText.text = "Points : " + score;
     }
+
+    void FixedUpdate() {
+        score++;    
+    }
 }
