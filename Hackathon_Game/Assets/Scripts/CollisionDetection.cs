@@ -14,7 +14,7 @@ public class CollisionDetection : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collide");
-        if(collision.gameObject.name == "pixel_melon(Clone)") {
+        if(collision.gameObject.tag == "Fruit") {
             Debug.Log("Fruit Collision");
             Points.fruitCollected();
             Destroy(collision.gameObject);
@@ -22,7 +22,7 @@ public class CollisionDetection : MonoBehaviour
             // fire script to place new fruit
         }
 
-        else if(collision.gameObject.name == "Ghost") {
+        else if(collision.gameObject.tag == "Yeti") {
             Debug.Log("Ghost Collision");
             // fire script to end the game
         }
