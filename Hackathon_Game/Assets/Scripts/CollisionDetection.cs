@@ -8,15 +8,16 @@ public class CollisionDetection : MonoBehaviour
 
     void Start()
     {
-        Points =FindObjectOfType<AddPoints>();
+        Points = GameObject.find("HUD").FindObjectOfType<AddPoints>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collide");
-        if(collision.gameObject.name == "Fruit") {
+        if(collision.gameObject.name == "pixel_melon(Clone)") {
             Debug.Log("Fruit Collision");
             Points.fruitCollected();
+            Destroy(collision.gameObject);
             // fire script to add points
             // fire script to place new fruit
         }
