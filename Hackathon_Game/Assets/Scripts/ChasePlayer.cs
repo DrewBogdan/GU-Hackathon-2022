@@ -9,6 +9,7 @@ public class ChasePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        transform.LookAt(player.transform);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
